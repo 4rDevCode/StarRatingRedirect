@@ -1,0 +1,32 @@
+.custom-rate .ant-rate-star {
+    font-size: 160px !important;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-rate .ant-rate-star {
+      font-size: 80px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-rate .ant-rate-star {
+      font-size: 60px !important;
+    }
+  }
+  
+.custom-title {
+    font-size: 80px !important; /* Tamaño por defecto */
+  }
+  
+  @media (max-width: 768px) {
+    .custom-title {
+      font-size: 50px !important; /* Tamaño para pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-title {
+      font-size: 30px !important; /* Tamaño para pantallas pequeñas */
+    }
+  }
+  
