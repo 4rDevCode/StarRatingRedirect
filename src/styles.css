@@ -14,19 +14,26 @@
     }
   }
   
-.custom-title {
+  .custom-title {
     font-size: 80px !important; /* Tamaño por defecto */
+    padding-top: 100px; /* Ajusta para dejar espacio al logo (valor inicial) */
+    background-image: url('./logo.png'); /* Reemplaza con la ruta correcta */
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    background-position: top center; /* Centra el logo arriba */
+     /* Ajusta el tamaño del logo para que quepa */
   }
   
   @media (max-width: 768px) {
     .custom-title {
       font-size: 50px !important; /* Tamaño para pantallas medianas */
+      padding-top: 65px; /* Ajusta el padding para pantallas medianas */
     }
   }
   
   @media (max-width: 480px) {
     .custom-title {
       font-size: 30px !important; /* Tamaño para pantallas pequeñas */
+      padding-top: 35px; /* Ajusta el padding para pantallas pequeñas */
     }
   }
-  

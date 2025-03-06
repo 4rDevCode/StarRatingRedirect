@@ -26,8 +26,19 @@ export default function App() {
   }, []);
 
   if (!config) {
-    return <div>Cargando...</div>; // Muestra un mensaje de carga mientras se obtiene la configuración
+    return (
+      <div style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        textAlign: "center"
+      }}>
+        Cargando...
+      </div>
+    );
   }
+  
 
   return (
     <Router basename="/opina"> 
