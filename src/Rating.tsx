@@ -30,7 +30,7 @@ export default function Rating() {
       try {
         const response = await fetch(`configuration.json`);
         if (!response.ok) {
-          throw new Error('Error al cargar el archivo de configuración');
+          throw new Error("Error al cargar el archivo de configuración");
         }
         const json = await response.json();
         setConfig(json);
@@ -60,6 +60,10 @@ export default function Rating() {
           allowHalf
           tooltips={config.descriptions}
         />
+      </div>
+      <div className="logo-container">
+        {" "}
+        <img src="./logo.png" alt="Logo" className="logo" />{" "}
       </div>
     </div>
   );
